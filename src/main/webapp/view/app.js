@@ -26,7 +26,7 @@ app.controller('UserCRUDCtrl', ['$scope','UserCRUDService', function ($scope,Use
           function error (response ){
               $scope.message = '';
               if (response.status === 404){
-                  $scope.errorMessage = 'User not found!';
+                  $scope.errorMessage = 'User not found!.';
               }
               else {
                   $scope.errorMessage = "Error getting user!";
